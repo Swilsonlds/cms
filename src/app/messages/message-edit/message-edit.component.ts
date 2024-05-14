@@ -15,6 +15,7 @@ export class MessageEditComponent {
   currentSender: string = 'Your Name'; // Replace with your name
 
   onSendMessage() {
+    event.preventDefault();
     const subjectValue = this.subjectInputRef.nativeElement.value;
     const msgTextValue = this.msgTextInputRef.nativeElement.value;
 
