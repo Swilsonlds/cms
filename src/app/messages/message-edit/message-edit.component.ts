@@ -12,7 +12,7 @@ export class MessageEditComponent {
 
   @Output() addMessageEvent = new EventEmitter<Message>();
 
-  currentSender: string = 'Your Name'; // Replace with your name
+  currentSender: string = 'Spencer';
 
   onSendMessage() {
     event.preventDefault();
@@ -20,7 +20,7 @@ export class MessageEditComponent {
     const msgTextValue = this.msgTextInputRef.nativeElement.value;
 
     const newMessage = new Message(
-      '1', // You may want to generate a unique ID or handle this differently
+      '1',
       subjectValue,
       msgTextValue,
       this.currentSender
