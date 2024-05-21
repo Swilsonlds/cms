@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output} from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Document } from '../document.model';
 
 @Component({
