@@ -19,6 +19,7 @@ import { MessageListComponent } from './messages/message-list/message-list.compo
 import { DropdownDirective } from './shared/dropdown.directive';
 import { DocumentsService } from './documents/documents.service';
 import { ContactService } from './contacts/contacts.service';
+import { MessageService } from './messages/message.service';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { ContactService } from './contacts/contacts.service';
     BrowserModule
   ],
   providers: [DocumentsService,
-              ContactService
+              ContactService,
+              MessageService
   ],
   bootstrap: [AppComponent]
 })
