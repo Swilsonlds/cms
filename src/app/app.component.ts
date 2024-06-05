@@ -8,11 +8,6 @@ import { CommonModule } from '@angular/common';
 })
 export class AppComponent {
   title = 'cms';
-  selectedFeature: string;
 
   constructor() { }
-
-  switchView(selectedFeature: string) {
-    this.selectedFeature = selectedFeature;
-  }
 }
